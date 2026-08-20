@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Dilema das Senhas Fracas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>O Dilema das Senhas Fracas</h1>
+            <p>Conveniência vs. Segurança na Era Digital</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card intro">
+            <h2>Por que isso é um problema?</h2>
+            <p>Usar senhas simples como <code>123456</code> ou repetir a mesma senha para vários serviços facilita a memorização, mas abre portas para invasões por ataques de força bruta e vazamentos de dados.</p>
+        </section>
+
+        <section class="card simulator">
+            <h2>Simulador de Força de Senha</h2>
+            <p>Teste o quão segura é uma combinação hipotética:</p>
+            
+            <div class="input-group">
+                <input type="password" id="passwordInput" placeholder="Digite uma senha para testar...">
+                <button id="toggleVisibility">👁️</button>
+            </div>
+
+            <div class="meter-container">
+                <div id="strengthMeter" class="meter-bar"></div>
+            </div>
+            <p id="feedbackText" class="feedback">Digite algo acima...</p>
+        </section>
+
+        <section class="card solutions">
+            <h2>Como se proteger?</h2>
+            <ul>
+                <li><strong>Comprimento importa:</strong> Use pelo menos 12 caracteres.</li>
+                <li><strong>Misture caracteres:</strong> Inclua letras maiúsculas, minúsculas, números e símbolos (ex: <code>@, #, $</code>).</li>
+                <li><strong>Gerenciadores de Senhas:</strong> Utilize ferramentas como Bitwarden ou 1Password para criar e armazenar senhas complexas.</li>
+                <li><strong>Autenticação em Duas Etapas (2FA):</strong> Ative o 2FA para adicionar uma camada extra de proteção.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Conscientização sobre Segurança Digital.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
